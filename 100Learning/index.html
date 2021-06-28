@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuerySlider</title>
+    
+    <link rel="stylesheet" href="slick.css">
+    <link rel="stylesheet" href="slick-theme.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="container">
+        <div class="nav-area">
+            <div class="logo">
+                <img src="img/book.png" alt="ESP">
+            </div>
+            <div class="nav-item">
+                <ul>
+                    <li><a href="#">ثبت نام</a></li> 
+                    <li><a href="#">ورود</a></li>
+                    <li><a href="#">تماس با ما</a></li> 
+                    <li><a href="#">درباره ما</a></li>  
+                    <li><a href="#">دیکشنری</a></li>
+                    <li><a href="#">آموزش تعاملی</a></li>
+                    <li><a href="#">آموزش آنلاین</a></li>
+                    <li><a href="#">انتخاب زبان</a></li>
+                    <li><a href="#">مقاله</a></li>   
+                 </ul>
+            </div>
+        </div>
+    </header>
+    
+    <div class="slider-area">
+        <div class="slider-img">
+            <div><img src="img/technology-2636253_960_720 (2).jpg" alt=""></div>
+            <div><img src="img/flag-of-turkey-3036191_960_720.jpg" alt=""></div>
+            <div><img src="img/flag-germany-1060305_960_720 (2).jpg" alt=""></div>
+            <div><img src="img/learn-1820039_1920.jpg" alt=""></div>
+            <div><img src="img/english-2724442_960_720.jpg" alt=""></div>        </div>
+    </div>
+
+
+      <script src="jquery-3.6.0.min.js"></script>
+      <script src="slick.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+            $('.slider-img').slick({
+                dots: true,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 2500,
+                fade:true,
+                fadeSpeed: 1000
+            });
+        }); 
+    </script>
+       
+
+    </body>
+</html>
