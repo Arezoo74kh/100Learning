@@ -1,3 +1,21 @@
+@font-face
+{
+  font-family:'Far_TwoLight';
+  src:url(font/Far_TwoLight.woff) format('woff');
+}
+@font-face
+{
+  font-family:'BYekan';
+  src:url(font/BYekan.woff) format('woff');
+}
+
+@font-face
+{
+  font-family:'IRANSans';
+  src:url(font/IranianSans.ttf) format('ttf');
+}
+
+
 body{
     margin: 0;
     padding: 0;
@@ -12,6 +30,21 @@ img{
 .logo{
     width: 12%;
     float: left;
+  -webkit-border-radius: 0.1px;
+  -moz-border-radius: 0.1px;
+  border-radius: 0.1px;
+  transition: all 1s;
+}
+.logo:hover{
+
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+
+
+
 }
 .nav-item{
     width: 75%;
@@ -20,6 +53,7 @@ img{
 .nav-item ul{
     float: right;
     list-style: none;
+
 }
 .nav-area{
     overflow: hidden;
@@ -27,13 +61,32 @@ img{
 .nav-item ul li{
     display: inline-block;
 }
+
+
+.nav-item ul li:hover{
+  background: #bc1f1a;
+  border-radius:17px;
+  transition:background 1s;
+  display: inline-block;
+}
 .nav-item ul li a{
     display: inline-block;
-    padding: 5px 15px;
+    padding: 5px 10px;
     text-transform: uppercase;
     text-decoration: none;
+    font-family: "IRANSans";
     color: #000;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.nav-item ul li a:hover{
+  display: inline-block;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "IRANSans";
+  color: #FFF;
+
 }
 .slick-slide img{
     height: 70vh;
@@ -65,3 +118,220 @@ img{
 .slick-dots li.slick-active button{
     background-color: gray;
 }
+#course_main{
+  width: 100%;
+  height: auto;
+
+
+}
+
+#one{
+  width: auto;
+  height: auto;
+  float: right;
+  padding: 10px;
+  margin-right: 30px;
+
+}
+#two{
+  padding: 10px;
+  width: auto;
+  height: auto;
+
+  float: left;
+  margin-left: 8px;
+}
+
+#three{
+  padding: 10px;
+  width: auto;
+
+  height: auto;
+
+  text-align: center;
+  float: right;
+  margin-right: 57px;
+}
+
+
+#course_main ul li{
+  display: inline-block;
+}
+
+.course_one {
+  position:relative;
+  width:300px;
+  height:200px;
+  overflow:hidden;
+  float: right;
+  margin-right:20px;
+  background-color:rgba(26,76,110,0.5)
+}
+
+.course_one p,.course_one h2 {
+  color:#fff;
+  padding:10px;
+  left:-20px;
+  top:20px;
+  text-align:center;
+  direction:rtl;
+  position:relative
+}
+
+
+.course_one p {
+  font-family:'IRANSans';
+  font-size:12px;
+  display: inline-block;
+  line-height:18px;
+  margin:0
+}
+
+.course_one h2 {
+  font-family:'IRANSans';
+  font-size:20px;
+  line-height:24px;
+  margin:0;
+}
+
+.effect img {
+  position:absolute;
+  margin:-15px 0;
+  right:0;
+  top:0;
+  cursor:pointer;
+  -webkit-transition:top .4s ease-in-out,right .4s ease-in-out;
+  -moz-transition:top .4s ease-in-out,right .4s ease-in-out;
+  -o-transition:top .4s ease-in-out,right .4s ease-in-out;
+  transition:top .4s ease-in-out,right .4s ease-in-out
+}
+
+.effect img.top:hover {
+  top:-230px;
+  right:-330px;
+  padding-bottom:200px;
+  padding-left:300px
+}
+
+
+
+
+/*
+course_two css
+ */
+
+.course_two {
+  position:relative;
+  width:300px;
+  height:200px;
+  overflow:hidden;
+  float:left;
+
+  background-color:rgba(26,76,110,0.5)
+}
+
+.course_two p,.course_two h2 {
+  color:#fff;
+  padding:10px;
+  left:-20px;
+  top:20px;
+  text-align:center;
+  direction:rtl;
+  position:relative
+}
+
+
+.course_two p {
+  font-family:'IRANSans';
+  font-size:12px;
+  display: inline-block;
+  line-height:18px;
+  margin:0
+}
+
+.course_two h2 {
+  font-family:'IRANSans';
+  font-size:20px;
+  line-height:24px;
+  margin:0;
+}
+
+.effect img {
+  position:absolute;
+  margin:-15px 0;
+  right:0;
+  top:0;
+  cursor:pointer;
+  -webkit-transition:top .4s ease-in-out,right .4s ease-in-out;
+  -moz-transition:top .4s ease-in-out,right .4s ease-in-out;
+  -o-transition:top .4s ease-in-out,right .4s ease-in-out;
+  transition:top .4s ease-in-out,right .4s ease-in-out
+}
+
+.effect img.top:hover {
+  top:-230px;
+  right:-330px;
+  padding-bottom:200px;
+  padding-left:300px
+}
+
+/*
+course_three
+ */
+
+
+.course_three {
+  position:relative;
+  width:300px;
+  height:200px;
+  overflow:hidden;
+  text-align: center;
+
+  background-color:rgba(26,76,110,0.5)
+}
+
+.course_three p,.course_three h2 {
+  color:#fff;
+  padding:10px;
+  left:-20px;
+  top:20px;
+  text-align:center;
+  direction:rtl;
+  position:relative
+}
+
+
+.course_two p {
+  font-family:'IRANSans';
+  font-size:12px;
+  display: inline-block;
+  line-height:18px;
+  margin:0
+}
+
+.course_three h2 {
+  font-family:'IRANSans';
+  font-size:20px;
+  line-height:24px;
+  margin:0;
+}
+
+.effect img {
+  position:absolute;
+  margin:-15px 0;
+  right:0;
+  top:0;
+  cursor:pointer;
+  -webkit-transition:top .4s ease-in-out,right .4s ease-in-out;
+  -moz-transition:top .4s ease-in-out,right .4s ease-in-out;
+  -o-transition:top .4s ease-in-out,right .4s ease-in-out;
+  transition:top .4s ease-in-out,right .4s ease-in-out
+}
+
+.effect img.top:hover {
+  top:-230px;
+  right:-330px;
+  padding-bottom:200px;
+  padding-left:300px
+}
+
